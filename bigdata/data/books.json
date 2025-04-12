@@ -1,0 +1,13 @@
+{"id":1001,"name":"Exploring C","author":"Yashwant Kanetkar","subject":"C Programming","price":123.456}
+{"id":1002,"name":"Pointers in C","author":"Yashwant Kanetkar","subject":"C Programming","price":371.019}
+{"id":1003,"name":"ANSI C Programming","author":"E Balaguruswami","subject":"C Programming","price":334.215}
+{"id":1004,"name":"ANSI C Programming","author":"Dennis Ritchie","subject":"C Programming","price":140.121}
+{"id":2001,"name":"C++ Complete Reference","author":"Herbert Schildt","subject":"C++ Programming","price":417.764}
+{"id":2002,"name":"C++ Primer","author":"Stanley Lippman","subject":"C++ Programming","price":620.665}
+{"id":2003,"name":"C++ Programming Language","author":"Bjarne Stroustrup","subject":"C++ Programming","price":987.213}
+{"id":3001,"name":"Java Complete Reference","author":"Herbert Schildt","subject":"Java Programming","price":525.121}
+{"id":3002,"name":"Core Java Volume I","author":"Cay Horstmann","subject":"Java Programming","price":575.651}
+{"id":3003,"name":"Java Programming Language","author":"James Gosling","subject":"Java Programming","price":458.238}
+{"id":4001,"name":"Operatig System Concepts","author":"Peter Galvin","subject":"Operating Systems","price":567.391}
+{"id":4002,"name":"Design of UNIX Operating System","author":"Mauris J Bach","subject":"Operating Systems","price":421.938}
+{"id":4003,"name":"UNIX Internals","author":"Uresh Vahalia","subject":"Operating Systems","price":352.822}

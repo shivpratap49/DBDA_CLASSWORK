@@ -1,0 +1,14 @@
+Execute following queries on "emp" and "dept" dataset using CTE.
+ 1
+ . Find emp with max sal of each dept.
+ 2
+ . Find avg of deptwise total sal.
+ 3
+ . Compare (show side-by-side) sal of each emp with avg sal in his dept and avg sal for his job.
+ 4
+ . Divide emps by category -- Poor < 1500, 1500 <= Middle <= 2500, Rich > 2500. Hint: CASE ... WHEN. Count emps for each category.
+ 5
+ . Display emps with category (as above), empno, ename, sal and dname.
+ 6
+ 4
+ . Count number of emps in each dept for each category (as above).

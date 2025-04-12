@@ -1,0 +1,9 @@
+PySpark Installation
+terminal> python3 -m pip install pyspark 
+In ~/.profile 
+export PYSPARK_PYTHON=python3 
+export PYSPARK_PYTHON=python3 
+export PYSPARK_DRIVER_PYTHON=python3 
+export SPARK_HOME=$HOME/.local/lib/python3.8/site-packages/pyspark 
+export PATH=$HOME/.local/bin:$PATH
+terminal> pyspark

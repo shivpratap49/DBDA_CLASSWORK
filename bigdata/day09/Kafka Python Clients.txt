@@ -1,0 +1,18 @@
+ *Kafka Python Clients*
+ 
+Step 1 
+     pip3 install kafka-python 
+
+ 
+Step 2: create new topic
+   kafka-topics.sh --zookeeper localhost:2181 --create --topic iot --replication-factor 1 --partitions 2 
+   kafka-topics.sh --zookeeper localhost:2181 --list 
+
+Step 3: Implement kafka producer in python
+    Demo: Python App (Random values) --> Kafka Topic
+
+Step 4: Testing consumer
+   kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic iot 
+
+Step 5: Implement kafka consumer in python
+   Demo: Kafka Topic --> Python App (& print)

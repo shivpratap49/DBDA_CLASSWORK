@@ -1,0 +1,54 @@
+sudo adduser username
+
+step 2. Change hostname of all machines (as appropriate). In Ubuntu this can be done using
+hostnamectl.
+sudo hostnamectl set-hostname master
+
+step 4. In /etc/hosts make entry of master and workers/slaves on all machines.
+>sudo vim /etc/hosts
+192.168.56.10 master
+192.168.56.11 worker1
+192.168.56.12 worker2
+192.168.56.13 worker3
+
+step 5. Ensure that all machines are running and connect to each other using "ping". Try commands
+from master
+ping master
+ping worker1
+ping worker2
+ping worker3
+
+step 6. Enable password-less login of master on all slaves.
+Follow these steps on master.
+ssh-keygen -t rsa -P ""
+ssh-copy-id $USER@master
+ssh-copy-id $USER@slave1
+ssh-copy-id $USER@slave2
+ssh-copy-id $USER@slave3
+
+
+1)On Master machine, conf/slaves make entries of all slaves.
+
+2)In all machines, conf/spark-defaults.conf
+
+spark.master spark://master:7077
+
+3)On master machine, set SPARK_LOCAL_IP & SPARK_MASTER_HOST to be set (in 
+conf/spark-env.sh) to the IP address of network.
+
+export SPARK_LOCAL_IP=master
+export SPARK_MASTER_HOST=master
+
+4)On each slave machine, set SPARK_LOCAL_IP (in conf/spark-env.sh) to the IP 
+address of network.
+export SPARK_LOCAL_IP=workerX
+
+5)from master
+terminal> start-master.sh
+terminal> start-slaves.sh
+Using spark cluster
+terminal>pyspark --master spark://master:7077
+terminal> spark-submit --master spark://master:7077 --deploy-mode client app.py
+
+
+http://master:8080/

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<configuration>
+	<property>
+		<name>fs.defaultFS</name>
+		<value>hdfs://localhost:9000/</value>
+	</property>
+	<property>
+		<name>mapreduce.framework.name</name>
+		<value>yarn</value>
+	</property>
+	<property>
+		<name>yarn.resourcemanager.address</name>
+		<value>localhost:8032</value>
+	</property>
+	<property>
+		<name>dfs.replication</name>
+		<value>1</value>
+	</property>
+	<property>
+		<name>mapreduce.task.io.sort.mb</name>
+		<value>100</value>
+	</property>
+	<property>
+		<name>mapreduce.map.memory.mb</name>
+		<value>1024</value>
+	</property>
+	<property>
+		<name>mapreduce.map.java.opts</name>
+		<value>	-Xmx1024m</value>
+	</property>
+	<property>
+		<name>mapreduce.reduce.input.buffer.percent</name>
+		<value>0.1</value>
+	</property>
+	<property>
+		<name>mapreduce.reduce.memory.mb</name>
+		<value>1200</value>
+	</property>
+	<property>
+		<name>mapreduce.reduce.java.opts</name>
+		<value>	-Xmx1200m</value>
+	</property>
+</configuration>
+
+<!--
+* Non-runnable jar
+	* hadoop jar <jar-path> <main-class> -conf <config-file-path> <cmd-line args to main-class>
+* Runnable jar
+	* hadoop jar <jar-path> -conf <config-file-path> <cmd-line args to main-class>
+-->
