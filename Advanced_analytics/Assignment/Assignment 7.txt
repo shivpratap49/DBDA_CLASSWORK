@@ -1,0 +1,19 @@
+1. Score 1: 3   3  3 12 15 16 17 19 23 24 32
+   Score 2: 20 13 13 20 29 32 23 20 25 15 30
+
+Solve the above example by using T-Test.
+
+2. 
+   S1 = 6,8,4,12,4,10
+   S2 = 18,14,10,20,12,16
+   
+Solve the above example using Mann Whitney U Test.
+
+3. An automobile tyre manufacturer claims that the average life of a particular grade of tyre is more than 20,000 km. A random sample of 16 tyres is having mean 22,000 km with a standard deviation of 5000 km.
+Validate the claim of the manufacturer at 5% LoS.
+
+4. A Telecom service provider claims that individual customers pay on an average 400 rs. per month with standard deviation of 25 rs. A random sample of 50 customers bills during a given month is taken with a mean of 250 and standard deviation of 15. What to say with respect to the claim made by the service provider? 
+
+5. It is claimed that the mean of the population is 67 at 5% level of significance. Mean obtained from a random sample of size 100 is 64 with SD 3. Validate the claim.
+
+Note for all Question: Z value for 5% level is between -1.96 to 1.96

@@ -1,0 +1,19 @@
+1. Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those
+restaurants which contain 'Wil' as first three letters for its name.
+
+2. Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those
+restaurants which contain 'ces' as last three letters for its name.
+
+
+3. Write a MongoDB query to find the restaurant Id, name, borough and cuisine for those
+restaurants which contain 'Reg' as three letters somewhere in its name.
+
+4. Write a MongoDB query to find the restaurants which belong to the borough Bronx and
+prepared either American or Chinese dish.
+
+5. Write a MongoDB query to arrange the name of the restaurants in ascending order along with
+all the columns.
+
+6. Write a MongoDB query to arrange the name of the restaurants in descending along with all
+the columns.
+

@@ -1,0 +1,34 @@
+Que. 1 
+
+Create a ANN model for a given dataset and evaluate the model.
+
+Datasets:
+1. NewspaperData.csv
+Independent = ‘Daily’, Dependent=’Sunday’
+
+2. delivery_time.csv
+Independent = ‘Sorting Time’, Dependent=’Delivery Time’
+
+3. WC_AT.csv
+Independent = ‘Waist’, Dependent=’AT’
+Adipose Tissue (AT) and Waist Circumference(Waist)
+
+Que. 2 
+
+In the given dataset TVMarketing.csv you have given  sales based on 'TV' marketing budget.
+Build a ANN model to predict 'Sales' using 'TV' as the predictor variable and evaluate the model.
+
+Dataset : TVMarketing.csv
+
+Que. 3
+
+You own an ice cream business and you would like to create a model that could predict the daily revenue in dollars based on the outside air temperature (degC). Build ANN Model and evaluate the model.
+
+Dataset : IceCreamData.csv
+
+Que. 4
+
+In the following dataset you have given SAT score and GPA of students. You have to predict GPA of students by using SAT score.
+Build a ANN Model and  evaluate the model.
+
+Dataset : SAT-GPA.csv

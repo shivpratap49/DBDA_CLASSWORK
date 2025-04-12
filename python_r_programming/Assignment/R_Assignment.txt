@@ -1,0 +1,13 @@
+1. Write a R program to create a list containing strings, numbers, vectors and a logical values.
+
+2. Write a R program to merge two given lists into one list.
+
+3. Write a R program to add a new item c4 = "R Programing" to a given list.
+
+Sample list: (c1 = 1:15, c2 = "C Programming", c3 = "HTML")
+
+4. Write a R program to create a matrix taking a given vector of numbers as input. Display the matrix.
+
+5. Write a R program to access the element at 3rd column and 2nd row, only the 3rd row and only the 4th column of a given matrix(c(1:16)) and Give row_names ,col_names.
+
+6. Write a R program to create two 2x3 matrix and add, subtract, multiply and divide the matrixes.

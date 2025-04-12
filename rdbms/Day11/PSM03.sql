@@ -1,0 +1,17 @@
+DROP FUNCTION IF EXISTS Title;
+DELIMITER $$
+CREATE FUNCTION Title(p_ename VARCHAR(40))
+RETURNS VARCHAR(40)
+DETERMINISTIC
+BEGIN
+    DECLARE ch1 CHAR(1);
+    DECLARE ch2 CHAR(40);
+    DECLARE result VARCHAR(40);
+    
+    SET ch1 = UPPER(LEFT(p_ename,1));
+    SET ch2 = LOWER(SUBSTRING(p_ename,2));
+    SET result = CONCAT(ch1,ch2);
+    RETURN result;
+END;
+$$
+DELIMITER ;

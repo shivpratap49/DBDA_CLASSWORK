@@ -1,0 +1,75 @@
+Question 1.  display all the emps 
+Question 2.  Limit
+Question 3.  display first 5 employees
+Question 4.  display first 10 employees
+Question 5.  display ename,sal and job of first 8 employees
+Question 6.  display ename,sal and da for first 6 employees
+Question 7.  display 6 records of emp skipping the first 5
+Question 8.  Order By clause
+Question 9. display ename and salary of all the employees
+Question 10. display ename and salary of all the employees sorted on sal in asc order
+Question 11. display ename and salary of all the employees sorted on sal in desc
+Question 12.  display all emp in alphabetical order
+Question 13.  display deptno and job sorted on the deptno and jobs in asc order
+Question 14.  display only first 7 emp with sal in desc order
+Question 15.  dispaly the employee with highest salary
+Question 16.  display 4 emps with lowest salary
+Question 17.  display the second higest salary
+Question 18.  display the third higest salary
+Question 19.  display ename and da of the employees sorted by da in asc order
+Question 20.  WHERE Clause
+Question 21.  display emp and their deptno
+Question 22.  display emps from dept 30;
+Question 23.  display all emps having sal<2000
+Question 24.  display all the emps who are working as analyst
+Question 25.  display all the emps with sal >1200 and working as salesman 
+Question 26.  display all emps who are not in dept 30
+Question 27.  display all emps whose sal are > 1000 but < 2000
+Question 28.  display all emps whose sal are > 1500 but < 3000 also include the given range
+Question 29.  display all the employees working either clerk or the salesman
+Question 30.  display all the emp who were hired in 1982
+Question 31.  Conditions on NULL
+Question 32.  display all the employees with comm as null
+Question 33.  wrong output, cannot use relational operator with NULL
+Question 34.  dislpay all the employees with not null comm
+Question 35.  wrong output
+Question 36.  IN and BETWEEN OPERATOR
+Question 37.  display all the employees who are working as clerk or the managers
+Question 38.  display all the employees from dept 10 and 30
+Question 39.  display all employees who work in dept 10 or they are managers
+Question 40.  IN cannot be used for checking condition on different columns
+Question 41.  IN can be used only on the same cols for the equality checks
+Question 42.  display details of employees whose names are SMITH, MARTIN,KING,JAMES
+Question 43.  display all the emps who are not manager or salesman
+Question 44.  display all the emps with sal > 1500 and sal <3000
+Question 45.  display all the emps hired in 1982
+Question 46.  display all the emps from dept 20 which are working as manager
+Question 47.  insert the employees with the below details in the emp table
+Question 48.  1,B
+Question 49.  2,J
+Question 50.  3,K
+Question 51.  display all the emp sorted on their ename;
+Question 52.  display all the employees whose first letter of name falls between B and J
+Question 53.  Like Operator
+Question 54.  % -> any no of char occurances or empty
+Question 55.  _ -> single occurance char
+Question 56.  display all the emps with their names starting with M
+Question 57.  diplay all the emps whose names are ending with H
+Question 58.  display all the emp who have R in between
+Question 59.  display all the emp whose ename are exactly of 4 characters
+Question 60.  display all emps who are having 2nd character as A in their name
+Question 61.  display all the emps having 2 'A' in their name
+Question 62.  display all the employees whose first letter of name falls between B and J
+Question 63.  practice examples
+Question 64.  display the emp with highest sal between 1000 and 2000
+Question 65.  display only the 5th highest sal in the range of 1000 and 2000
+Question 66.  display CLERK with min salary
+Question 67.  display the 2nd highest salary from the dept 20 and 30
+Question 68.  DML -> UPDATE
+Question 69.  change the location of the dept 4o to USA
+Question 70.  increase the price of the C programming books by 50;
+Question 71.  provide sal as 1000 and comm as 200 for the employee B
+Question 72.  DML - DELETE
+Question 73.  delete the dept 20 from the dept table
+Question 74.  DDL -> Truncate
+Question 75.  DDL -> DROP

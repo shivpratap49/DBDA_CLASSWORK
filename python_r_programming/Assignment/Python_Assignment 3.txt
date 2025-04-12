@@ -1,0 +1,44 @@
+1)  Concatenate two lists in the following order by using list comprehension
+Input:- list1 = ["Hello ", "take "]
+list2 = ["Dear", "Sir"]
+Output:- [’Hello Dear’, ’Hello Sir’, ’take Dear’, ’take Sir’]
+
+2) Wirite a Python Program to find the repeated item of a tuple(Take a value
+from user which you want to find)
+
+3) Write a Python program to count the elements in a list until an element is a
+tuple.
+Sample input : list = [10, 20, 30, (40,50), 60]
+Sample output = 3
+
+4) Write a method in python to display the elements of list thrice if it is a
+number and display the element terminated with ‘#’ if it is not a number.
+Hint-: Use InBuilt Function isdigit()
+Refer below as a input:-
+mylist = [’41’,’DROND’,’Sunbeam’, ’13’,’ZARA’]
+
+5) Write a function find_longest_word() that takes a list of words and returns
+the length of the longest one.
+
+6)  Define a procedure histogram() that takes a list of integers and prints a
+histogram to the screen.
+For example, histogram([4, 9, 7]) should print the following:
+****
+*********
+*******
+
+7)  Write a program in Python to remove repetitive items from a list.
+Hint Given num = [2,3,4,5,2,6,3,2]
+Expected output Result: [2, 3, 4, 5, 6] New list
+
+8) Given a dictionary of students and their favourite colours:
+people={'Arham':'Blue','Lisa':'Yellow',''Vinod:'Purple','Jenny':'Pink'}
+A. Find out how many students are in the list
+B. Change Lisa’s favourite colour
+C. Remove 'Jenny' and her favourite colour
+D. Sort and print students and their favourite colours alphabetically by name
+
+9) Write a program to sum all the values of a dictionary.
+Hint dict1 = {‘key 1’: 200, ‘key 2’: 300}
+Expected output
+Result: 500

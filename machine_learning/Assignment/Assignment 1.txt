@@ -1,0 +1,46 @@
+1. Write a NumPy program to create an array with the values 1, 7, 13, 105  and determine the size of the memory occupied by the array.
+
+2. Write a NumPy program to create an element-wise comparison (greater, greater_equal, less and less_equal) of two given arrays.
+
+3.  Write a NumPy program to create an array of 10 zeros, 10 ones, 10 fives, 10 tens, 10 twentys and 10 fiftys.
+
+4. Write a NumPy program to create an array of integers from 30 to 70.
+
+5. Write a NumPy program to create an array of integers from 50 to 95.
+
+6. Write a NumPy program to create an array of all even integers from 20 to 80.
+
+7. Write a NumPy program to create an array of all odd integers from 20 to 80.
+
+8. Write a NumPy program to generate an array of 15 random numbers from 10 to 40.
+
+9. Write a NumPy program to generate an array of 10 random numbers from 30 to 50.
+
+10. Write a NumPy program to generate an array of 20 random numbers from 50 to 90.
+
+11. Create any two arrays & perform various mathematical operations.
+    i.e. Addition, Substraction, Multiplication, Divide.
+
+12. Write a NumPy program to create a 3x4 matrix filled with values from 10 to 21.
+
+13. Write a NumPy program to find the number of rows and columns in a given  matrix. 
+
+14. Write a NumPy program to create a 3x3x3 array filled with arbitrary values.
+
+15. Write a NumPy program to create a 2x3x4 array filled with arbitrary values.
+
+16. Write a NumPy program to convert a list of numeric values into a one-dimensional NumPy array.
+
+17. Write a NumPy program to create a 3x3 matrix with values ranging from  2 to 10.
+
+18. Write a NumPy program to create an array with values ranging from 12 to 38.
+
+19. Write a NumPy program to reverse an array (the first element becomes the last).
+
+20. Write a NumPy program to convert an data type into to a floating type.
+
+21. Write a NumPy program to convert a list array.
+
+22. Write a NumPy program to get the element-wise remainder of an array of division.
+
+23. Write a NumPy program to get the element-wise remainder of an array of numbers from 20 to 50 which are divisible by 3.

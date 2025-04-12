@@ -1,0 +1,81 @@
+Que. The Description of each dataset is given below.
+You have to perform following operations.
+1. Understand the data
+2. Do Proper EDA.
+3. Do Scaling.
+4. Spli the data into Train & Test.
+
+Datasets:
+
+A.Churn.Csv
+
+In this dataset you have to predict that customer is exited or not based on various factors given in dataset.
+
+B. Claimants.csv
+
+In this dataset you have to predict that whether we have to give ATTORNEY to the clients or not (0=Yes, 1=No) based on below factors.
+CLMAGE - Age of Client
+CLMSEX - Sex of client (0=Male, 1= Female)
+SEATBELT - Whether client has Seatbelt or not (0=Yes, 1=No)
+CLMINSUR - Whether Client give Insurance or not (0=Yes, 1=No)
+LOSS - Loss that client faced
+
+C. Framingham.csv
+
+The model's main purpose is to predict the 10-year risk of Coronary Heart Disease (CHD). CHD is a disease of the blood vessels supplying the heart. Heart disease has been the leading cause of death worldwide since 1921. In 2008, 7.3 million people died from CHD. 
+The classification goal is to predict whether the patient has 10-year risk of future coronary heart disease (CHD).The dataset provides the patients’ information. It includes over 4,000 records and 15 attributes.
+Variables
+Sex: male or female(0=female, 1=male)
+Age: Age of the patient
+education: Some high school (1), high school/GED (2), some college/vocational school (3), college (4)
+Current Smoker: whether or not the patient is a current smoker (0=No, 1=Yes)
+Cigs Per Day: the number of cigarettes that the person smoked on average in one day
+BP Meds: whether or not the patient was on blood pressure medication 
+Prevalent Stroke: whether or not the patient had previously had a stroke (0=No, 1=Yes)
+Prevalent Hyp: whether or not the patient was hypertensive (0=No, 1=Yes)
+Diabetes: whether or not the patient had diabetes (0=No, 1=Yes)
+Tot Chol: total cholesterol level
+Sys BP: systolic blood pressure 
+Dia BP: diastolic blood pressure
+BMI: Body Mass Index
+Heart Rate: heart rate
+Glucose: glucose level
+
+D. EastWest.csv
+ 
+The file contains information on passengers who belong to an airline’s frequent flier program. For each passenger the data include information on their mileage history and on different ways they accrued or spent miles in the last year. The goal is to try to identify clusters of passengers that have similar characteristics for the purpose of targeting different segments for different types of mileage offers.
+
+Balance--Number of miles eligible for award travel
+
+Qual_mile--Number of miles counted as qualifying for Topflight status
+
+cc1_miles -- Number of miles earned with freq. flyer credit card in the past 12 months:
+cc2_miles -- Number of miles earned with Rewards credit card in the past 12 months:
+cc3_miles -- Number of miles earned with Small Business credit card in the past 12 months:
+
+Bonus_miles--Number of miles earned from non-flight bonus transactions in the past 12 months
+
+Bonus_trans--Number of non-flight bonus transactions in the past 12 months
+
+Flight_miles_12mo--Number of flight miles in the past 12 months
+
+Flight_trans_12--Number of flight transactions in the past 12 months
+
+Days_since_enrolled--Number of days since enrolled in flier program
+
+Award--whether that person had award flight (free flight) or not.
+
+
+E. crime_data.csv
+
+The crime_data file information of crimes in cities. 
+
+Data Description:
+Murder -- Muder rates in different places of United States
+Assualt- Assualt rate in different places of United States
+UrbanPop - urban population in different places of United States
+Rape - Rape rate in different places of United States
+
+F. Universities.csv
+
+The Universities dataset contain information different universities based on various parameters.

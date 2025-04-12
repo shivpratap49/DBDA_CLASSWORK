@@ -1,0 +1,39 @@
+Question 1.  dual is a virtual table
+Question 2.  completly optional in mysql
+Question 3. using help
+Question 4.  display only the price from the books table 
+Question 5.  where the price should have only 2 digits after the decimal
+Question 6. Returns the smallest integer value not less than X.
+Question 7.  X = 1.34 Generated value(gv)=2
+Question 8.  gv > x; (gv is not less than x) 
+Question 9. Returns the largest integer value not greater than X.
+Question 10.  X = 1.34 Generated value(gv)= 1
+Question 11.  gv < x; (gv is not greater than x) 
+Question 12.  String Fuunctions
+Question 13.  display empno - empname from emp table
+Question 14.  ename is working as job in dept deptno
+Question 15.  eg -> SMITH is working as CLERK in dept 20
+Question 16.  display all the enames and jobs in small case
+Question 17.  display all the subjects in upper case
+Question 18.  display all the initial letter of the emp name.
+Question 19.  display all the emps whose first letter of name falls in the range of B and 
+Question 20.  dispay the credit card number like below
+Question 21.  XXXXXXXX1234
+Question 22.  i/P -> 8365
+Question 23.  display the mobile no as below
+Question 24.  mob=8983049388
+Question 25.  89XXXXXX88
+Question 26.  display ***sunbeam***
+Question 27.  Date and Time functions
+Question 28.  DATE_SUB
+Question 29.  display experiance of employees in years and months
+Question 30.  display all the emps hired in 1982
+Question 31.   Flow Control Functions
+Question 32.  display names of the dept from emp table
+Question 33.  10 -> Development
+Question 34.  20 -> Testing
+Question 35.  any other dept -> UNKNOWN
+Question 36.  display all the emps and their category
+Question 37.  ename and category  (sal < 2000 as POOR otherwise RICH)
+Question 38.  display all the comm. if the comm is null then display their salary 
+Question 39.  make the comm as null if the sal is 1250

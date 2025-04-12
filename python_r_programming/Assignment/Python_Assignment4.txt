@@ -1,0 +1,13 @@
+1. Define a function intersection() that takes two lists and returns another list that have common elements in both lists. If list1 = [10, 20, 30, 40] and list2 = [30,40, 50, 60], then result should be [30, 40].
+
+2. Define a function union() that takes two lists and returns another list that have union both lists. If list1 = [10, 20, 30, 40] and list2 = [30, 40, 50, 60], then result should be [10, 20, 30, 40, 50, 60].
+
+3. Define a function subtract() that takes two lists and returns difference (i.e. excess elements from list1). If list1 = [10, 20, 30, 40] and list2 = [30, 40, 50, 60], then result should be [10, 20].
+
+4. Create a list of lambda functions that converts from tonns to kilograms, kilograms to grams, grams to milligrams, and milligrams to pounds. Input a weight from user in tonns and print it in remaining all units. E.g. if user inputs 0.002 tonns, then output should be 2 kg, 2000gm, 2000000 mg, and 4.409245244 lbs.
+
+5. Input a string from user and display unique characters in it. Hint: list(str) convert string to list of chars.
+
+6. In following text count occurrence of each letter (irrespective of case). Hint: convert string to same case e.g. text.lower(). Do not use Counter collection.
+ 
+      text = """Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming."""

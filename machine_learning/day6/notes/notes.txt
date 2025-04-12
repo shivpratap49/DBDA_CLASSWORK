@@ -1,0 +1,19 @@
+guidelines
+----------
+- pre-process the data
+  - select the columns using domain knownledge
+  - dealing with NA values
+  - check the data types (encoding) 
+    - one hot encoding: use this when the data nominal (category order is NOT important)
+    - label encoding: use this when the data is ordinal (category order is important)
+  - check the categories count (if the dependent column is categorical) and balance the data if needed
+  - check the correlation with statistical analysis (cov and corr)
+  - drop the unwatned columns or rows
+  - add required columns
+  - check the scale (scale the data if required)
+  - remove outliers if needed
+- select x and y
+- split the data into train and test
+- train the model
+- evaluate the model
+- visualization

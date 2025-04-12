@@ -1,0 +1,18 @@
+1.
+Write a Python program to create a Vehicle class with max_speed and mileage instance attributes.
+Write a python program to Create a child class Bus that will inherit all of the variables and methods of the Vehicle class.
+
+2.
+Write a Rectangle class in Python language, allowing you to build a rectangle with length and width attributes.
+Create a Perimeter() method to calculate the perimeter of the rectangle and a Area() method to calculate the area of the rectangle. 
+Create a method display() that display the length, width, perimeter and area of an object created using an instantiation on rectangle class.
+Create a Parallelepiped child class inheriting from the Rectangle class and with a  attribute and another Volume() method to calculate the volume of the Parallelepiped.
+
+3.
+Create a class product having (pid and manufacture_location) as private fields,Create another class as Book having (name, number_of_pages,author,price) as private fields. Specify _init(), getters, setters, __str_() , print_data() Use correct OOP feature to implement this scenario.
+a) display the details of the product and book
+b) check if book price is 0 or negative then price is not valid otherwise print valid price.
+
+4.
+Write a Class Painting with method calculatePaintingCost. Write a Class FlatPainting with noOfRooms which is inheritated from Class Painting. Override calculatePaintingCost. (Assume per room painting cost is 10000).
+Write a Class BulidingPainting with noOfFlats which is inheritated from Class Painting. Override calculatePaintingCost. (Assume per Flats painting cost is 25000) Write method for 1.Flat 2.Building and then calculate the cost according to the type.

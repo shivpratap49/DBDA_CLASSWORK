@@ -1,0 +1,37 @@
+Question 1:
+
+Create a class Mobile, having fields id(int), name(String), brand/Company(String), price(double), screen_size(int).
+
+Specify constructors, getter ,setter and toString() methods.
+
+Specify accept and display functions where we can accept the record of Mobile data.
+
+Create 10 mobile objects and add it to collection.
+
+Sort the book details by name.
+
+Write the collection of data to the .dat file
+
+Question 2:
+
+Question:
+
+Create an application called “OnlineBanking”. This application should have an Account [accno, name, email_id, phone_no, balance, class.
+
+This application should also contain a Tester class which displays the following menu.
+
+Use ArrayList collection to store account object (5 objects)
+
+1. Add Account
+
+2. Display All Accounts
+
+3. Withdraw
+
+4. Deposit (min Balance 1000)
+
+5. Transfer
+
+6. Remove an Account by account number
+
+Write Menu driven program.

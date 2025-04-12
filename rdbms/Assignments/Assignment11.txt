@@ -1,0 +1,4 @@
+1. Compare (show side-by-side) sal of each emp with avg sal in his dept and avg sal for his job.
+2. Divide emps by category -- Poor < 1500, 1500 <= Middle <= 2500, Rich > 2500. Hint: CASE ... WHEN. Count emps for each category.
+3. Display emps with category (as above), empno, ename, sal and dname.
+4. Count number of emps in each dept for each category (as above).

@@ -1,0 +1,43 @@
+1.
+Write a definition of a method count_now(places) to find and display those place names, in which there are more than 5 characters.
+For example :
+If the list places contains
+["DELHI","LONDON","PARIS","NEW YORK","DUBAI"]
+The following should get displayed :
+LONDON
+NEW YORK
+
+2.
+Calculate the sum and average of the digits present in a string Str1="Python83737@#8496"
+
+3.
+Write a program that rotates the element of a list so that the element at the first index moves to the second index, the element in the second index moves to the third index, etc., and the element in the last index moves to the first index.
+
+Input:- [‘Sunday’,’Monday’,’Tuesday’,’Wednesday’]
+Output:- [’Wednesday’, ‘Sunday’, ’Monday’, ’Tuesday’]
+
+4.
+Write a Python program to count the number of characters (character frequency) in a string. Go to the editor
+Input:- Sample String : sunbeaminfo.com'
+Output:-
+{'s': 1, 'u': 1, 'n': 2, 'b': 1, 'e': 1, 'a': 1,'m': 2, 'i': 1, 'f': 1, 'o': 2, '.': 1, 'c': 1}
+
+5.
+In following text count occurrence of each word (irrespective of case). Hint: convert string to same case e.g. text.lower().
+
+text = """Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation. Python is dynamically typed and garbage-collected. It supports multiple programming paradigms, including structured, object-oriented and functional programming."""
+
+6.
+Create a tuple to store information of a person. Reverse the tuple (in a new tuple) and print it
+person_info = ("John Doe", 30, "New York")
+
+7.
+Create a list of tuples where each tuple contains a number and its square for numbers from 0 to 9. Solve using list comprehension.
+
+8.
+Find all of the numbers from 1-1000 that are divisible by 7. Solve Using list Comprehension.
+
+9.
+Create a list of all the consonants in the string “Yellow Yaks like yelling and yawning and yesturday they yodled while eating yuky yams”. 
+Solve using list Comprehension.
+

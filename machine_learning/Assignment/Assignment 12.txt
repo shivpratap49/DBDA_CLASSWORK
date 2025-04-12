@@ -1,0 +1,4 @@
+Que.
+Perform sentiment analysis on following data music.csv.
+Note : for importing use encoding='latin-1'
+Calculate word count and also calculate score for each word.

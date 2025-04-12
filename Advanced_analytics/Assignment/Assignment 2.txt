@@ -1,0 +1,56 @@
+1. In a batch of 15 students, 5 students failed in a test. The marks of 10 students who passed were 9, 6, 7, 8, 8, 9, 6, 5, 4, 7. What was the median of all the 15 students?
+
+2. Find the median of the following:
+     4, 17, 77, 25, 22, 23, 92, 82, 40, 24, 14, 12, 67, 23, 29
+
+3. Rahul’s family drove through 7 states on summer vacation. The prices of Gasoline differ from state to state. Calculate the median of gasoline cost.
+    1.79, 1.61, 2.09, 1.84, 1.96, 2.11, 1.75
+
+4. The Bharat Ball Bearings Ltd., has collected the following data.
+    12, 19, 21, 30, 13, 19, 22, 31, 17, 20, 24, 31, 18, 21, 27, 31.
+    Compute the arithmetic mean, the median and the mode using the sixteen observations given.
+    
+5. Following are the marks obtained by a batch of 10 students in a certain class test in Statistics (X) and Accountancy (Y).
+Roll No. :        1  2  3  4  5  6  7  8  9 10
+       X :       63 64 62 32 30 60 47 46 35 28
+       Y :       68 66 35 42 26 85 44 80 33 72
+In which subject is the level of knowledge of the students higher?
+
+6. Find the range, coefficient of range of given observations: 32, 41, 28, 54, 35, 26, 23, 33, 38, 40.
+
+7. Following are the marks of students in Mathematics: 50, 53, 50, 51, 48, 93, 90, 92, 91, 90. Find the range, coefficient of range of the marks.
+
+8. If the data set has observations as: 4, 6, 7, 5, 3, 5, 4, 5, 2, 6, 2, 5, 1, 9, 6, 5, 8, 4, 6, 7. Then find:
+(a) The maximum value?
+(b) The minimum value?
+(c) Range of data set
+(d) coefficient of range
+
+8. Find the range, coefficient of range of the following data set:
+7,9,2,5,9,3,5,4
+100,120,113,189,190,201,145
+1555, 1670, 1750, 2013, 2540, 2820
+135, 150, 139, 128, 151, 132, 146, 149, 143, 141
+
+9. If the heights of 6 people are 140 cm, 142 cm, 150 cm, 149 cm, 156 cm, and 153 cm. Find the range, coefficient of range of the height.
+
+10. What is the range, coefficient of range for the following set of numbers?
+    15, 21, 57, 43, 11, 39, 56, 83, 77, 11, 64, 91, 18, 37
+
+11. What is the range, coefficient of range for the following set of numbers?
+     57, -5, 11, 39, 56, 82, -2, 11, 64, 18, 37, 15, 68
+
+12. Find out Q1, Q3,IQR,Quartile Deviation and Coefficient of Quartile Deviation of below.
+
+       A= [17,29,42,26,56,90,14,50,35]
+       B=[89,25,90,47,12,57,44,78,10,27,42,92]
+       C=[110,275,289,537,582,739,427,367,178,290,325,578,296,270,188]
+       
+13. Determine the Q1, Q3,IQR,Quartile Deviation and Coefficient of Quartile Deviation for the first ten prime numbers.
+
+14. Given the following set of data, find out Q1, Q3,IQR,Quartile Deviation and Coefficient of Quartile Deviation twice the interquartile range?
+    25,32,49,21,37,43,27,45,31
+    
+15.  Find the Q1, Q3,IQR,Quartile Deviation and Coefficient of Quartile Deviation for the below data  
+56,14,84,21,85,2,35,74,66,52,45
+4,17,7,14,8,12,3,16,10,4,4,1

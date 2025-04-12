@@ -1,0 +1,31 @@
+1. Cards each marked with one of the numbers 6, 7, 8, ....., 15 and placed in a box and mixed thoroughly. One card is drawn at random from the box. What is the probability of getting a card with number less than 10?
+
+2. What is the probability that two different friends have different birthdays? (ignoring leap year).
+
+3. A box contains 3 blue, 2 white and 4 red marbles. If a marble is drawn at random from the box, what is the probability that it will not be a white marble?
+
+4. From a well-shuffled pack of cards, a card is drawn at random. Find the probability of getting a black queen.
+
+5. A bag contains 4 red and 6 black balls. A ball is taken out of the bag at random. Find the probability of getting a black ball.
+
+6. A die is thrown once. Find the probability of getting a number greater than 5.
+
+7. A coin is tossed 12 times. What is the probability of getting exactly 8 heads?(Using Binomial Distribution).
+
+8. A coin that is fair in nature is tossed n number of times. The probability of the occurrence of a head six times is the same as the probability that a head comes 8 times, then find the value of n.(Using Binomial Distribution).
+
+9. The probability that a person can achieve a target is 3/4. The count of tries is 5. What is the probability that he will attain the target at least thrice?(Using Binomial Distribution).
+
+10. In a game of chance there is spinning of an arrow which comes to rest pointing at one of the numbers 1, 2, 3, 4, 5, 6, 7, 8 and there are equally likely outcomes. What is the probability that it will point at        
+(i) 7?           (ii) an odd number?        (iii) a number less than 9?
+
+11. A bag contains 5 red, 4 blue and 3 green balls. A ball is taken out of the bag at random. Find the probability that the selected ball is  
+(i) of red colour        (ii) not of green colour.
+
+12. If a coin is tossed 5 times, find the probability of:
+a. Exactly 2 heads
+b. At least 4 heads.
+c. Getting at most 2 heads 
+Solve using Binomial distribution
+
+13. A fair coin is tossed 10 times, what are the probability of getting exactly 6 heads and at least six heads. Solve using Binomial distribution

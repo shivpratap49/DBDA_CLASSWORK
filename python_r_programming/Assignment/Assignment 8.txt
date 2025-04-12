@@ -1,0 +1,21 @@
+1.
+Create a class named Mobile with attributes ModelName,Company,Price and with
+methods:set_attributes, print_details and can_afford
+
+2.
+Define a Circle class allowing to create a circleC (O, r) with center O(a, b) and radius r using the constructor:
+def init (self,a,b,r):
+self.a = a
+self.b = b
+self.r = r
+A:- Define a Area() method of the class which calculates the area of the circle.
+B:- Define a Perimeter() method of the class which allows you to calculate the perimeter of the circle.
+
+3.
+Create a class 'Student' with rollno, studentName, course ,dictionary of marks(subjectName -marks [5]).
+Provide following functionalities
+A. initializer
+B. override __str__ method
+C. accept student data
+D. Print student data
+E. accept records of 5 students and Print it

@@ -1,0 +1,519 @@
+mongoimport
+Performance
+Mongo Indexes
+    Regular index
+    Composite index
+    Unique index
+    TTL index 
+    GeoSpatial Index
+Capped Collections
+Mongo db Validators
+Grid FS
+Enable security
+=================================================
+
+
+
+
+path on my PC--> /home/sunbeam/Documents/DBMS_git/data_collection_dbms/Day12/books_hdr.csv 
+Run this command on CMD not on mongo shell
+## Importing Data into Mongo
+* CSV import
+cmd> mongoimport -d dbda -c books --type csv --headerline 
+/home/sunbeam/Documents/DBMS_git/data_collection_dbms/Day12/books_hdr.csv 
+
+->open mongo shell
+
+use edbd;
+show collections;
+db.books.find();
+
+
+* JSON import
+cmd> mongoimport -d dbda -c busstops 
+/home/sunbeam/Documents/DBMS_git/data_collection_dbms/Day12/busstops.json
+
+
+* JS script
+cmd> mongo dbda /home/sunbeam/Documents/DBMS_git/data_collection_dbms/Day12/sales.js
+
+=========================================================================
+
+## Performance
+
+db.emp.find({ job: 'MANAGER' });
+
+db.emp.find({ job: 'MANAGER' }).explain(true);
+
+db.emp.find({ _id: 7900 });
+
+db.emp.find({ _id: 7900 }).explain(true);
+
+db.emp.aggregate([
+{
+	$match: { job: 'MANAGER' }
+}
+]);
+
+db.emp.aggregate([
+{
+	$match: { job: 'MANAGER' }
+}
+], {
+	explain: true
+});
+
+
+COLLSCAN: the query is scanning the collection in disk. 
+Pretty bad, as no index covered the search, 
+so MongoDB has to read the whole collection.
+
+for performance optimization=>
+IDHACK: means that your query has chosen to use _id field index.
+IXSCAN: means your that query is using a regular index. 
+It is just about query path optimization. 
+"_id" is by default a field with hashed index
+
+
+
+
+
+
+## Mongo Indexes
+Regular index 
+
+db.emp.getIndexes();
+
+## CREATE INDEX idx_job ON emp(job ASC)
+> db.emp.createIndex({ job : 1 })
+
+## get Indexes by using getIndexes()
+> db.emp.getIndexes();
+db.emp.find({ job: 'MANAGER' })
+db.emp.find({ job: 'MANAGER' }).explain(true);
+
+
+
+---------------------------
+//Composite index
+// CREATE INDEX idx_dept_job ON emp(deptno ASC, job ASC);
+> db.emp.createIndex( { deptno : 1, job : 1})
+db.emp.find({ deptno: 30, job: 'MANAGER' });
+db.emp.find({ deptno: 30, job: 'MANAGER' }).explain(true);
+
+
+-------------------------------
+//Unique index
+db.emp.find({ename: 'KING'});
+db.emp.find({ename: 'KING'}).explain(true);
+> db.emp.createIndex({ename:1},{unique:true})
+db.emp.getIndexes();
+db.emp.find({ename: 'KING'}).explain(true);
+db.emp.insert({ _id: 1000, ename: 'ADAMS' });
+// error-duplicate index error
+
+// DROP INDEX ON emp(job);
+>db.emp.dropIndex({job:1})
+
+
+
+
+---------------------------------------------
+### TTL index (Time To Live index)
+	* Works on some date time field.
+  
+current date : 
+db.test.insert(
+   { _id: 1 ,time: new Date() } )
+
+
+db.ttl.insert({_id: 1, time: new Date(), msg: 'Message 1' });
+db.ttl.insert({_id: 2, time: new Date(), msg: 'Message 2' });
+db.ttl.insert({_id: 3, time: new Date(), msg: 'Message 3' });
+db.ttl.insert({_id: 4, time: new Date(), msg: 'Message 4' });
+db.ttl.insert({_id: 5, time: new Date(), msg: 'Message 5' });
+db.ttl.insert({_id: 6, time: new Date(), msg: 'Message 6' });
+
+
+db.ttl.find();
+
+db.ttl.find();
+
+// create index on "time" field so that documents older than "100" seconds will be auto-deleted.
+
+db.ttl.createIndex({time:1},{expireAfterSeconds:100})
+
+db.ttl.getIndexes();
+
+db.ttl.dropIndex({time:1})
+
+
+==========================================================================
+### GeoSpatial Index
+* Geo locations are traditionally represented in longitude and latitude.
+* Nowadays location info is used for various purposes
+	* To mark some geo location (of a cab, of a building).
+	* Driving directions (path -- set of points connected linearly).
+	* Find nearby services (search locations/features/services within a radius)
+	* To mark some region (rectangle or polygon).
+* Geo information is stored as GeoJSON format (specification).
+* geojson.io
+
+* GeoJSON formats
+	* type: Point, Line, Polygon
+	* coordinates: 
+		* Point: [long, lat]
+		* Line: [ [long, lat], [long, lat], [long, lat], ... ]
+		* Polygon:  [ [long, lat], [long, lat], [long, lat], [long, lat], [long, lat], [long, lat] ]
+			* Anti-clockwise coordinates
+			* First and Last coordinates must be same
+
+
+* Mongo GeoSpatial Indexes
+	* 2d index -- legacy indexes on longitude & latitude (not for GeoJSON).
+	* 2d sphere index -- newer indexes on GeoJSON fields.
+	* haystack index -- for smaller area (within mall, ...).
+
+* Mongo GeoSpatial operators
+	* $geoWithin -- find locations within given area (rectangle or polygon).
+	* $geoIntersects -- check if multiple regions/area are intersecting.
+	* $geoNear -- find locations within a radius.
+
+
+
+```JS
+create a Collection point by inserting 4 points
+db.points.insert({name:'p1',location:{type:'Point',coordinates:[0.5,0.5]}})
+db.points.insert({name:'p2',location:{type:'Point',coordinates:[0.25,0.25]}})
+db.points.insert({name:'p3',location:{type:'Point',coordinates:[0.75,0.75]}})
+db.points.insert({name:'p4',location:{type:'Point',coordinates:[1.5,1.5]}})
+
+
+
+
+
+db.points.find({},{name:1,_id:0});
+
+create a Polygon geoWithin for above 4 points demo
+
+db.points.find({
+      location:{
+        $geoWithin:{
+          $geometry: {
+            "type": "Polygon",
+            "coordinates": [
+            [
+            [
+              0.0,0.0
+            ],
+            [
+              1.0,0.0
+            ],
+            [
+              1.0,1.0
+            ],
+            [
+             0.0,1.0
+            ],
+            [
+              0.0,0.0
+            ]  
+          ]
+        ]
+      }
+    }
+  }
+},{name:1,_id:0})
+
+
+find PMT busstops withing area specified by Polygon coordinates
+db.busstops.find().pretty();
+
+db.busstops.find({
+      location:{
+        $geoWithin:{
+          $geometry: {
+            "type": "Polygon",
+            "coordinates": [
+            [
+            [
+              73.85634320388098,
+              18.488278985086396
+            ],
+            [
+              73.86118458646806,
+              18.481712840726928
+            ],
+            [
+              73.87109868050365,
+              18.483295633618354
+            ],
+            [
+              73.87230489527795,
+              18.49321518092829
+            ],
+            [
+              73.8622586133217,
+              18.493638276810117
+            ],
+            [
+              73.85634320388098,
+              18.488278985086396
+            ]
+          ]
+        ]
+      }
+    }
+  }
+}).pretty()
+
+
+Find busstops near  by  given point 
+db.busstops.createIndex({ location: "2dsphere" });
+
+
+
+
+
+
+maxDistance = distance in meters
+
+db.busstops.find({
+      location:{
+        $geoNear:{
+          $geometry: {
+            "type": "Point",
+            "coordinates": 
+            [
+          73.8670606110673,
+          18.489771498585853
+        ]    
+      },
+      $maxDistance:500
+    }
+  }
+}).pretty()
+============================================================================
+## Capped Collections
+
+
+create Capped Collections to store logs having size 10240 and max count of logs 5
+db.createCollection (
+    'logs',{
+    capped: true,
+    size:10240,
+    max:5
+    }
+)
+
+show collections;
+
+## insert 5 messages
+db.logs.insert({message:"Log message 001"})
+db.logs.insert({message:"Log message 002"})
+db.logs.insert({message:"Log message 003"})
+db.logs.insert({message:"Log message 004"})
+db.logs.insert({message:"Log message 005"})
+
+
+
+
+db.logs.find();
+
+### add 3 more  in log
+
+db.logs.insert({message:"Log message 006"})
+db.logs.find();
+db.logs.insert({message:"Log message 007"})
+db.logs.insert({message:"Log message 008"})
+
+
+db.logs.find();
+
+
+### update one message by long string 
+
+db.logs.update({
+  message:"Log message 004"},{
+  $set:{message:'this is new message'}
+})
+
+
+
+
+//"errmsg" : "Cannot change the size of a document in a capped collection
+
+db.logs.update({
+  message:"Log message 008"},{
+  $set:{message:'this '}
+})
+
+
+
+
+// error
+
+### update one message by same number of char in orignal string 
+db.logs.update({
+  message:"Log message 004"},{
+  $set:{message:'Log message XYZ'}
+})
+//no error
+
+db.logs.find();
+
+## try to delete one record
+db.logs.deleteOne({
+  message:'Log message 008'
+})
+// NO ERROR
+
+
+db.logs.insert({message:"Log message 009000000000"})
+
+
+
+
+
+=====================================
+Mongo db Validators
+
+## Validators 
+* Like CHECK constraint in RDBMS.
+* Check the values to meet some 
+criteria before insert/update the 
+document.
+
+
+create employee collection having 
+following validator
+1 name = type:string
+2 age = type: number 
+3 age = gte: 18 
+4 mobile: having 0 to 9 digit and its length =10  
+-->regex: /^[0-9]{10}$/
+
+
+
+>db.createCollection("employee",{
+  validator:{
+    $and:[
+        { name: { $type:'string' } },
+        { age:  { $type:'number' } },
+        { age:  { $gte: 18} },
+        { moblie: {$regex: /^[0-9]{10}$/ } }
+    ]
+  }
+})
+
+
+###insert employee having name=Abhishek age=30  
+mobile =9822012345
+>db.employee.insert({name:'Abhishek',age:30,moblie:"9822012345"})
+
+
+
+###insert employee having name=Nikhil 
+age=5 mobile =9822012345
+
+>db.employee.insert({name:'Nikhil',age:5,moblie:"9822012345"})-----> //error
+
+
+
+###insert employee having name=Nishant age=40 
+>db.employee.insert({name:'Nishant',age:40})
+-----> //error
+
+
+
+
+
+
+###insert employee having name=Nikhil age=25 
+mobile =098812088115
+
+>db.employee.insert({name:'Nikhil',age:25,moblie:"09822012345"})
+
+
+
+---error
+
+
+
+
+
+
+###insert employee having name=Prashant age=45 
+mobile =9822012345 email='prashant@yahoo.com' 
+
+>db.employee.insert({name:'Prashant',age:45,moblie:"9822012345",email:'prashant@yahoo.com'})
+
+
+//No error
+
+
+structured-books
+semi-structured - emp json ,xml
+unstructured - images , pdf, video, 
+========================================
+## Grid FS
+* Used to save larger files like image, recording, 
+PDF documents, etc.
+* Not done using mongo JS shell.
+* Done using Mongo drivers (of different languages) and "mongofiles" command.
+
+cmd> cd dirpath
+
+cmd> mongofiles -d dbda1 put book.pdf
+
+cmd> mongofiles -d dbda1 list
+
+cmd> cd different_dirpath
+
+cmd> mongofiles -d dbda1 get book.pdf
+
+show collections;
+
+db.fs.files.find().pretty();
+
+db.fs.chunks.find().pretty();
+
+db.fs.chunks.find({}, {data:0}).pretty();
+=======================================
+# Enable security
+
+* terminal> mongo
+
+
+> use admin
+
+> db.createUser({
+	user: 'root',
+	pwd: 'manager',
+	roles: [ { role: "userAdminAnyDatabase", db: "admin" }, "readWriteAnyDatabase" ]
+})
+
+
+> exit
+
+* terminal> sudo vim /etc/mongod.conf
+security:
+    authorization: enabled
+
+* terminal> sudo systemctl restart mongo
+
+* terminal> mongo --authenticationDatabase "admin" -u "root" -p
+
+
+> use dbda
+
+> db.createUser({
+		user: 'dbda',
+		pwd:  'dbda', 
+		roles: [ { role: "readWrite", db: "test" } ]
+})
+
+> exit
+
+
+* terminal> mongo --authenticationDatabase "classwork" -u "dbda" -p

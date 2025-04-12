@@ -1,0 +1,45 @@
+Question 1. to display all the databases
+Question 2. to remove/delete the database
+Question 3. to create a new database
+Question 4. to start using the database
+Question 5. to display all the tables from the selected database
+Question 6. cretae a new table demo
+Question 7.  to add the data in the table demo
+Question 8.  to check the data from the demo table
+Question 9.  to delete the table
+Question 10. create student table with rollno,name and marks
+Question 11.  add the records in the table
+Question 12.  1, Anil, 50
+Question 13.  2, Mukesh ,60
+Question 14.  3, Ramesh , 70
+Question 15.  4, Suresh , 80
+Question 16.  error
+Question 17.  pass the values in the same sequence as the columns are declared
+Question 18.  to pass the values in any sequence specify the col names 
+Question 19.  after the table name in the INSERT query
+Question 20.  5,Ram
+Question 21. error
+Question 22.  ok
+Question 23.  sham,80
+Question 24.  display all the students
+Question 25.  create a table temp with cols c1 char(4), c2 varchar(4),c3 TEXT(4)
+Question 26. error - Data too long for column 'c1' at row 1
+Question 27.  error - Data too long for column 'c2' at row 1
+Question 28.  Projections
+Question 29.  display empname and sal of all employees
+Question 30.  Computed Columns 
+Question 31.  display emp name, sal and his DA (50% of the salary)
+Question 32.  Alias
+Question 33.  display ename,sal,da and total salary (sal + da) of all the employees
+Question 34.  NOT OK
+Question 35.  10 - Administration
+Question 36.  20 - Testing
+Question 37.  30 - Development
+Question 38.  display ename from emp;
+Question 39.  display sal from emp;
+Question 40.  display job from emp;
+Question 41.  display all the unique jobs from the emp;
+Question 42.  display unique deptno from emp;
+Question 43.  display deptno and job from emp;
+Question 44.  display deptno and their unique jobs
+Question 45. error

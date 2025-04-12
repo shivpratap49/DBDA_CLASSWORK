@@ -1,0 +1,12 @@
+[
+  {
+    "name": "person1",
+    "age": 30,
+    "canVote": true,
+    "hobbies": ["watching movies", "listening music"],
+    "address": {
+      "house": 100,
+      "city": "pune"
+    }
+  }
+]

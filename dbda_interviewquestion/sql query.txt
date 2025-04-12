@@ -1,0 +1,223 @@
+Question--1
+
+-- Create the "orders" table
+CREATE TABLE orders (
+    order_id INT,
+    status varchar(20),
+    pay_mode VARCHAR(50)
+);
+
+-- Insert sample data into the "orders" table with some repeated order_id
+INSERT INTO orders (order_id, status, pay_mode) VALUES
+    (1, 'completed', 'credit card'),
+    (2, 'completed', 'cash on delivery'),
+    (3, 'pending', 'credit card'),
+    (4, 'completed', 'PayPal'),
+    (5, 'completed', 'cash on delivery'),
+    (6, 'pending', 'credit card'),
+    (1, 'completed', 'credit card'),
+    (2, 'completed', 'cash on delivery'),
+    (3, 'pending', 'credit card'),
+    (7, 'completed', 'PayPal'),
+    (8, 'pending', 'cash on delivery'),
+    (9, 'completed', 'PayPal'),
+    (10, 'completed', 'cash on delivery'),
+    (4, 'completed', 'credit card'),
+    (11, 'completed', 'credit card');
+
+
+
+SELECT
+    order_id,
+    (SELECT COUNT(*) FROM orders o1 WHERE o1.order_id = o2.order_id AND o1.status = 'completed') AS completed_payment_count,
+    (SELECT COUNT(*) FROM orders o1 WHERE o1.order_id = o2.order_id AND o1.status = 'pending') AS pending_payment_count
+FROM orders o2
+GROUP BY order_id;
+
+
+SELECT
+    order_id,
+    SUM(CASE WHEN status = 'completed' THEN 1 ELSE 0 END) AS completed_payment_count,
+    SUM(CASE WHEN status = 'pending' THEN 1 ELSE 0 END) AS pending_payment_count
+FROM orders
+GROUP BY order_id
+ORDER BY order_id;
+
+
+Question 2--
+
+
+-- Create the "people" table
+CREATE TABLE people (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fname VARCHAR(50),
+    lname VARCHAR(50),
+    city VARCHAR(50),
+    mobile_no VARCHAR(15),
+    emp_no INT
+);
+
+-- Insert sample data into the "people" table
+INSERT INTO people (fname, lname, city, mobile_no, emp_no) VALUES
+    ('John', 'Doe', 'New York', '555-1234', 101),
+    ('Jane', 'Smith', 'Los Angeles', '555-5678', 102),
+    ('Bob', 'Johnson', 'Chicago', '555-9876', 103),
+    ('Alice', 'Williams', 'New York', '555-4321', 104),
+    ('Charlie', 'Brown', 'Los Angeles', '555-8765', 105),
+    ('Eve', 'Davis', 'Chicago', '555-3456', 106),
+    ('David', 'Lee', 'New York', '555-7890', 107),
+    ('Sarah', 'Miller', 'Los Angeles', '555-6543', 108),
+    ('Mike', 'Taylor', 'Chicago', '555-2345', 109),
+    ('Amy', 'White', 'New York', '555-8901', 110),
+    ('Paul', 'Clark', 'Los Angeles', '555-7654', 111),
+    ('Lisa', 'Wilson', 'Chicago', '555-4567', 112),
+    ('Mark', 'Anderson', 'New York', '555-0123', 113),
+    ('Emily', 'Harris', 'Los Angeles', '555-5432', 114),
+    ('Tom', 'Moore', 'Chicago', '555-7899', 115),
+    ('Olivia', 'Martin', 'New York', '555-8761', 116),
+    ('Michael', 'Thompson', 'Los Angeles', '555-2349', 117),
+    ('Sophia', 'Garcia', 'Chicago', '555-9012', 118),
+    ('William', 'Davis', 'New York', '555-6541', 119),
+    ('Grace', 'Brown', 'Los Angeles', '555-2341', 120),
+    ('Jo', 'Do', 'Seattle', '555-1224', 134),
+    ('Jae', 'Smi', 'Dallas', '555-5378', 143);
+    
+    
+select * from people where city in (select city from people group by city having count(city) >1);
+
+select * from people where city = any(select city from people group by city having count(city) >1);
+
+SELECT p1.*
+FROM people p1
+INNER JOIN (
+    SELECT city
+    FROM people
+    GROUP BY city
+    HAVING COUNT(city) > 1
+) p2 ON p1.city = p2.city;
+
+
+
+
+
+Duplicate Concept--->
+
+
+
+
+create table dup(id int,name varchar(10));
+insert into dup values(1,'john'),(2,'alex'),(3,'smith'),(4,'judy'),(5,'john'),(6,'alex');
+
+
+
+by--> group by
+select name,count(*) from dup group by name having count(*)>1;
+
+
+
+by-->window function & CTE
+with row_num as (select name,row_number() over (partition by name order by name) as row_no from dup) select name,row_no from row_num where row_no>1;
+
+select name from (select name,row_number() over (partition by name order by name) as row_no from dup) t where t.row_no>1;
+
+wrong ---->  select name,row_number() over (partition by name order by name) as row_no from dup where row_number() over (partition by name order by name) >1;
+
+
+
+
+
+by-->self join
+select dup1.name from dup dup1 inner join dup dup2 where dup1.name=dup2.name and dup1.id<dup2.id;
+
+
+
+
+by using exists--->
+(correlated subquery)
+select dup1.name from dup dup1 where exists (select 1 from dup dup2 where dup1.name=dup2.name group by dup2.name having count(*)>1 );
+select dup1.name from dup dup1 where exists (select 1 from dup dup2 where dup1.name=dup2.name having count(*)>1);
+
+by using not exists--->  showing wrong result(showing distinct)
+select dup1.name from dup dup1 where not exists (select 1 from dup dup2 where dup1.name=dup2.name and dup1.id<>dup2.id);
+
+
+by using not in clause---->
+select name from  dup where name not in (select name from dup group by name having count(name)=1);
+
+
+
+for Unique element---> just reverse the conditions logically
+select dup1.name from dup dup1 where not exists (select 1 from dup dup2 where dup1.name=dup2.name having count(*)>1);
+
+
+
+
+
+
+
+
+Deleting duplicate entry---->
+
+with dup_entry as (select name,count(*) from dup group by name having count(*)>1)  delete from dup where name in (select name from dup_entry);
+--->this delete duplicate along with the original value
+
+with dup_entry as (select name,row_number() over (partition by name order by name) as r_no from dup) delete from dup_entry where r_no >1;
+    
+delete dup1 from dup dup1 inner join dup dup2 where dup1.name=dup2.name and dup1.id<dup2.id;
+---> this delete only duplicate and keep original value(best query)
+
+
+
+with dup_entry as (select name,count(*) from dup group by name having count(*)>1)  delete from dup where name in (select name from dup_entry);
+
+
+
+
+
+
+
+
+
+Triangle_type query
+SELECT
+  a,
+  b,
+  c,
+  CASE
+    WHEN a = b AND b = c THEN "Equilateral triangle"
+    WHEN a = b OR b = c OR a = c THEN "Isosceles triangle"
+    WHEN a <> b AND b <> c AND c <> a and (a+b>c and b+c>a and c+a>b) THEN "Scalene triangle"
+    ELSE "not a triangle"
+  END AS triangle_type
+FROM sides;
+
+
+delimiter //
+create function fetch_name(eno_param int)
+returns varchar(50)
+deterministic
+reads sql data
+begin
+declare empname varchar(50);
+
+select group_concat(ename separator ',') into empname from emps where empno = eno_param ;
+
+return empname;
+
+end;
+//
+delimiter ;
+
+drop function fetch_name;
+
+
+
+
+with mukesh1 as select count(empno) as cnt over (partition by empno)from emps where empno=1   -- window function
+
+
+
+
+
+
+

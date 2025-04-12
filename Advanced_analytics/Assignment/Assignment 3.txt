@@ -1,0 +1,43 @@
+1.  Below the scores obtained by a student in tests. Find variance,standard deviation and Range.
+     45,36,40,41,41,34,39,42,41,49,36,56,38,41,38,42,40,39
+
+2. Find the variance and standard deviation of all the even numbers less than 10.
+
+3. If a die is rolled, then find the variance and standard deviation of the possibilities.
+
+4. Calculate the variance and standard deviation of heights (in mm) of 5 students of following 610, 450, 160, 420, 310.
+
+5. Find the variance and standard deviation of the numbers 3, 8, 6, 10, 12, 9, 11, 10, 12, 7.
+
+6. Find the variance and standard deviation of the following scores on an exam:
+   92, 95, 85, 83, 75, 50
+
+7.  Find the standard deviation of the average temperatures recorded over a five-day period last winter: 18, 22, 19, 25, 12
+
+8. Find the variance and standard deviation for the five states with the most covered bridges:
+    Oregon: 106 Vermont: 121 Indiana: 152 Ohio: 234 Pennsylvania: 347
+
+9. Find the variance and standard deviation of the heights of five tallest skyscrapers in the United States:
+   Sears Tower (Willis Building): 1450 feet Empire State Building: 1250 feet
+   One World Trade Center: 1776 feet Trump Tower: 1388 feet  World Trade Center: 1340 feet
+
+10. Find the variance and standard deviation of the scores on the most recent reading test:
+     7.7, 7.4, 7.3, and 7.9
+
+11. Find the variance and standard deviation of the highest temperatures recorded in eight specific states: 112, 100, 127, 120, 134, 118, 105, and 110.
+
+12. The length, in seconds, of the thirteen songs on an album are 128,219,316,189,512,98,155,110,468,177,203,73,252. Calculate the variance and standard deviation.
+
+13. Calculate the absolute skewness if Mean = 13.25 and Median = 12.96. Comment about Skewness.
+
+14. Calculate the absolute skewness if Mean = 13.25 and Mode = 13.25. Comment about skewness.
+
+15. Calculate Bowley’s Coefficient of Skewness if Q1=13.73, Q3=38.29 and Median = 26.01. 
+
+16. Calculate the absolute skewness if Mean = 33.25 and Median = 32.96. Comment about Skewness.
+
+17. Calculate the absolute skewness if Mean = 42.61 and Mode = 43.25. Comment about skewness.
+
+18. Calculate Bowley’s Coefficient of Skewness if Q1=124.87, Q3=146.53 and Median = 135.7.
+
+

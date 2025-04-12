@@ -1,0 +1,106 @@
+1. Identify the Data type for the Following activity whether it is Continous or descrete:
+   Number of beatings from Friends
+   Results of rolling a dice
+   Weight of a person
+   Weight of Gold
+   Distance between two places
+   Length of a leaf
+   Dog's weight
+   Blue Color
+   Number of kids
+   Number of tickets in Indian railways
+   Number of times married
+   Gender (Male or Female)
+
+
+2. Identify the Data types, which were among the following
+Nominal, Ordinal, Interval, Ratio.
+
+ Gender
+ Religious Preference
+ High School Class Ranking
+ Barometer Pressure
+ Celsius Temperature
+ SAT Scores
+ Weight
+ Hair Color
+ Socioeconomic Status
+ Fahrenheit Temperature
+ Height
+ Type of living accommodation
+ IQ(Intelligence Scale)
+ Blood Group
+ Time Of Day
+ Time on a Clock with Hands
+ Number of Children
+
+3.  Below are the scores obtained by a student in tests 
+     Find mean.
+     45,36,40,41,41,34,39,42,41,49,36,56,38,41,38,42,40,39
+
+
+4 . Calculate Mean of each of following column.
+     Points	Score	  Weight
+     3.9	2.62	  16.46
+     3.9	2.875	  17.02
+     3.85	2.32	  18.61
+     3.08	3.215	  19.44
+     3.15	3.44	  17.02
+     2.76	3.46	  20.22
+     3.21	3.57	  15.84
+     3.69	3.19	  20
+     3.92	3.15	  22.9
+     3.92	3.44	  18.3
+     3.92	3.44	  18.9
+     3.07	4.07	  17.4
+     3.07	3.73	  17.6
+     3.07	3.78	  18
+     2.93	5.25	  17.98
+     3.00	5.424	  17.82
+     3.23	5.345	  17.42
+     4.08	2.2	  19.47
+     4.93	1.615	  18.52
+     4.22	1.835	  19.9
+     3.7	2.465	  20.01
+     2.76	3.52	  16.87
+     3.15	3.435	  17.3
+     3.73	3.84	  15.41
+     3.08	3.845	  17.05
+     4.08	1.935	  18.9
+     4.43	2.14	  16.7
+     3.77	1.513	  16.9
+     4.22	3.17	  14.5
+     3.62	2.77	  15.5
+     3.54	3.57	  14.6
+     4.11	2.78	  18.6
+
+5. The intelligence quotients (IQ’s) of 10 boys in a class are given below :
+     70, 120, 110, 101, 88, 83, 95, 98, 107, 100
+     Find the mean I.Q.
+
+6. The following is the frequency distribution of the number of telephone calls received in 245 successive one-minute intervals at an exchange :
+    Number of Calls :    0   1    2   3   4    5   6   7
+     Frequency :        14  21   25  43   51  40  39  12
+    Obtain the mean number of calls per minute.
+
+
+7. Calculate the average bonus paid per member from the following data :
+    Bonus (in Rs.) : 50 60 70 80 90 100 110
+   No. of persons :  1   3  5  7  6   2   1
+
+8. Peter travelled by car for 4 days. He drove 10 hours each day. He drove : first day at the rate of 45 km.per hour, second day at the rate of 40 km. per hour, third day at the rate of 38  km. per hour and fourth day at the rate of 37 km. per hour. What was his average speed ?
+
+9. The mean weight of a student in a group of 6 students is 119 lbs. The individual weights of five of them are 115, 109, 129, 117 and 114 lbs. What is the weight of the sixth student ?
+
+10. Goals scored by a hockey team in successive matches are 5, 7, 4, 2, 4, 0, 5, 5 and 3. What is the number of  goals, the team must score in 10th match in order that the average comes to 4 goals per match.
+
+11. The average salary of 49 out of 50 employees in a firm is Rs. 100. The salary of the 50th employee is Rs. 200. Find the mean salary of all the employees in the firm.
+
+12. The mean of 200 items was 50. Later on it was discovered that two items were wrongly read as 92 and 8 instead of 192 and 88. Find out the correct mean.
+
+13. The Bharat Ball Bearings Ltd., has collected the following data.
+    12, 19, 21, 30, 13, 19, 22, 31, 17, 20, 24, 31, 18, 21, 27, 31.
+    Compute the  mean using the sixteen observations given.
+
+14. Calculate mean from the following data of the heights in inches of a group of students :
+    61, 62, 63, 61, 63, 64, 64, 60, 65, 63, 64, 65, 66, 64

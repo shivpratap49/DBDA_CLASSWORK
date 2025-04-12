@@ -1,0 +1,7 @@
+1. Write a MongoDB query to find the restaurants which locate in latitude value less than
+-95.754168.
+2. Write a MongoDB query to find the restaurants that do not prepare any cuisine of 'American'
+and their grade score more than 70 and latitude less than -65.754168.
+3. Write a MongoDB query to arranged the name of the cuisine in ascending order and for that
+same cuisine borough should be in descending order.
+4. Write a MongoDB query to know whether all the addresses contains the street or not.

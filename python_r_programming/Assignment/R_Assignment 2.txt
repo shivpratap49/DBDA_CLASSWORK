@@ -1,0 +1,16 @@
+Q1 
+create a data frame for Students information
+columns: RollNo, StudentsName, Age, Score
+
+1. get number of columns
+2. get number of rows
+3. get columns
+4. get first 3 rows
+5. get last 3 rows
+6. get general information
+7. get statistical information
+
+Q2 
+Create a data frame for Students information
+columns: RollNo, StudentsName, Age, Score
+Write a R program to extract 3rd and 5th rows with 1st and 3rd columns from a given data frame.

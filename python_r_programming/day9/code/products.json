@@ -1,0 +1,7 @@
+[
+  {"title":  "product1", "price":  100, "description":  "nice product"},
+  {"title":  "product2", "price":  200, "description":  "nice product"},
+  {"title":  "product3", "price":  300, "description":  "nice product"},
+  {"title":  "product4", "price":  400, "description":  "nice product"},
+  {"title":  "product5", "price":  500, "description":  "nice product"}
+]

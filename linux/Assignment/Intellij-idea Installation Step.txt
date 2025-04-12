@@ -1,0 +1,4 @@
+Intellij-idea Installation Step:
+
+sudo snap install intellij-idea-community --classic
+

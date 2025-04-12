@@ -1,0 +1,38 @@
+1. As only 3 students came to attend the class today, find the probability for exactly 4 students to attend the classes tommorow. Use Poisson Distribution.
+
+2. The average number of calls received by a switchboard in a 30-minute period is 15.
+a. What is the probability that between 10:00 and 10:30 the switchboard will receivenmore than 5 calls but fewer than 10 calls?
+b. What is the probability that between 10:00 and 10:15 the switchboard will receive not more than 2 calls? Use Poisson Distribution.
+
+3. Accidents occur on a certain stretch of motorway at the rate of three per month.
+Find the probability that on a given month there will be …
+a) … no accidents.
+b) … one accident.
+c) … two accidents.
+d) … three accidents.
+e) … four accidents.
+Use Poisson Distribution. 
+
+4. Cretan Airlines services which arrive late to Athens Airport on a typical week can be modelled by a Poisson distribution with mean of 4.5 .
+Determine the probability that on a given week there will be …
+i. … four late arrivals.
+ii. … less than four late arrivals.
+iii. … at least seven late arrivals.
+
+5. Sheep are randomly scattered in a field which is divided into equal size squares. There are three sheep on average on each square. Determine the probability that on a given square there will be
+a) not more than five sheep.
+b) more than two but not more than seven sheep.
+
+6. Post boxes in London are randomly spaced out and on average five post boxes are found per square mile. Determine the probability that on a certain square mile there will be
+a) exactly seven post boxes.
+b) less than eight but not less than four post boxes.
+
+7. A discrete random variable X has Poisson distribution with mean λ.Given that P(X=8)= P(X=9), determine the value of P(4<X≤10).
+
+8. A shop sells a particular make of smart phone. It is assumed that the daily sales of this type of phone is a Poisson variable with mean 3. Find the probability,that on a particular day the shop sells
+a) exactly 3 smart phones.
+b) at least 4 smart phones.
+
+9. A car showroom salesman receives on average one call every 15 minutes. Assuming a Poisson model, determine the probability that the salesman will receive exactly 6 calls between 9 a.m. and 10 a.m.
+
+10. The daily number of breakdowns of taxis of a certain taxi firm can be modelled by a Poisson distribution with mean 1.5. Find the probability that on a given day there will be exactly 2 breakdowns.

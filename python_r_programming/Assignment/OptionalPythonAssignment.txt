@@ -1,0 +1,12 @@
+Q3. Create a python application for the following requirement . It is a banking
+application having minimum 5 accounts in it. Class bank is having following details bankName, branch name,IFSC code , accountList(5 accounts) Class Account is having following details AccHolderName ,mobileNumber ,
+accNumber, balance Minimum balance amount of Rs3000 must be there in account .
+Implement following functions::
+1:accept bank information
+2:print bank information
+3:add new account
+4.print information of all accounts
+5.print information of selected accounts
+6.delete selected account (Return 1 if deleted else 0)
+7.Deposit amount in a account (Return updated balance)
+Write a menu driven program to achieve above requirements.

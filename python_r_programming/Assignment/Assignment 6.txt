@@ -1,0 +1,61 @@
+1. 
+Write a version of a palindrome recognizer that also accepts phrase
+palindromes such as "Go hanga salami I'm a lasagna hog.", 
+"Was it a rat I saw?", 
+"Step on no pets", 
+"Sit on a potato pan, Otis", 
+"Lisa Bonet ate no basil", 
+"Satan, oscillate my metallic sonatas", 
+"I roamed under it as a tired nude Maori",
+"Rise to vote sir", or the exclamation "Dammit, I'm mad!".
+Note that punctuation, capitalization, and spacing are usually ignored.
+
+2. 
+A pangram is a sentence that contains all the letters of the English alphabet at least once.
+for example: The quick brown fox jumps over the lazy dog. 
+Your task here is to write a function to check a sentence to see if it is a pangram or not.
+
+3.
+Write a Python program to replace dictionary values(V,VI)and with their average.
+Input:-
+student_details= [{'id' : 1, 'subject' : 'math', 'V' : 70, 'VI' : 82},
+{'id' : 2, 'subject' : 'math', 'V' : 73, 'VI' : 74},
+{'id' : 3, 'subject' : 'math', 'V' : 75, 'VI' : 86}]
+Expected Output:
+[{'subject': 'math', 'id': 1, 'V+VI': 76.0}, {'subject': 'math', 'id': 2, 'V+VI': 73.5},
+{'subject': 'math', 'id': 3, 'V+VI': 80.5}]
+
+4.
+Python program to create a list of tuples from given list having number and its cube in each tuple.
+I/P-[1,2,5,6]
+Output-[(1, 1), (2, 8), (5, 125), (6, 216)]
+
+5.
+Write a program that display following output:
+ SHIFT
+ HIFTS
+ IFTSH
+ FTSHI
+ TSHIF
+ SHIFT
+
+6.
+Write a program that reads a string from keyboard and display:
+A. The number of uppercase letters in the string
+B. The number of lowercase letters in the string
+C. The number of digits in the string
+D. The number of whitespace characters in the string
+
+7.
+Write a function in python to count the number of lines from a text file "story.txt" which is not starting with an alphabet "C".
+Example: If the file "test.txt" contains the following lines:
+        Connecting DB’s with Python.
+        Working with DB’s using Python.
+        Accessing and Manipulating DB’s.
+        Creation of Python virtual Environment.
+        Working with beautiful soup.
+        Working with matplotlib, seaborn.
+The function should display the output as 4
+
+8.
+Write a function in Python to count and display the total number of words in a text file

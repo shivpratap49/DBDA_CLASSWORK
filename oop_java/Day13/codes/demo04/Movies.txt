@@ -1,0 +1,5 @@
+1                 Star Wars           7.5
+2                 Godfather           8.0
+3                 Hidden Figures      7.0
+4                 Bruce Almighty      6.5
+5                 Forest Gump         8.5

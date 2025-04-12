@@ -1,0 +1,16 @@
+Que. 1
+
+Prepare association rules using apriori for the following  data sets 
+1. book.csv
+2. movies.csv
+
+Que. 2
+
+Consider following datasets , do PCA on each datasets and preapare any two classification models.
+
+Datasets:
+wine.csv
+framingham.csv
+claimants.csv
+glass.csv
+churn.csv
